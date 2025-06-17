@@ -1,0 +1,155 @@
+main.container {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+form.d-flex {
+    gap: 0.75rem;
+    flex-wrap: wrap;
+}
+
+form input[type="text"] {
+    flex: 1;
+    min-width: 220px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    padding: 0.5rem 1rem;
+}
+
+form button.btn,
+form a.btn {
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+
+form a.btn-success {
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+/* Tabela */
+.table {
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.table thead {
+    background-color: #f8f9fa;
+}
+
+.table thead th {
+    font-weight: 600;
+    color: #444;
+}
+
+.table td,
+.table th {
+    vertical-align: middle;
+    padding: 0.75rem;
+}
+
+.table td a.btn-sm {
+    margin-right: 0.3rem;
+    padding: 0.35rem 0.6rem;
+    font-size: 0.85rem;
+}
+
+.btn-primary:hover {
+    background-color: #0b5ed7;
+}
+
+.btn-warning:hover {
+    background-color: #e0a800;
+    color: #fff;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+    color: #fff;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    form.d-flex {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .table-responsive {
+        font-size: 0.9rem;
+    }
+}
+
+.criar-receita-container {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.criar-receita-container h1 {
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+}
+
+.criar-receita-container label {
+    font-weight: 600;
+    color: #444;
+}
+
+.criar-receita-container textarea {
+    resize: vertical;
+}
+
+.criar-receita-container .form-control,
+.criar-receita-container .form-select {
+    border-radius: 8px;
+}
+
+.criar-receita-container button,
+.criar-receita-container a.btn {
+    border-radius: 8px;
+    padding: 10px 20px;
+}
+
+.criar-receita-container .btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.criar-receita-container .btn-success:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+}
+
+.criar-receita-container .btn-secondary {
+    margin-left: 10px;
+}
+
+@media (max-width: 576px) {
+    .criar-receita-container {
+        padding: 1rem;
+    }
+
+    .criar-receita-container button,
+    .criar-receita-container a.btn {
+        width: 100%;
+        margin-top: 0.5rem;
+    }
+}
+

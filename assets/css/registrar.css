@@ -1,0 +1,56 @@
+:root {
+    --primary-color: #4e73df;
+    --secondary-color: #858796;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.register-container {
+    width: 100%;
+    padding: 20px;
+}
+
+.register-card {
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+}
+
+.register-logo {
+    max-height: 80px;
+    margin-bottom: 1.5rem;
+}
+
+.toggle-password {
+    cursor: pointer;
+}
+
+.input-group-text {
+    background-color: #f8f9fa;
+}
+
+/* Validação */
+.is-invalid {
+    border-color: #dc3545 !important;
+}
+
+.invalid-feedback {
+    display: none;
+    width: 100%;
+    margin-top: 0.25rem;
+    font-size: 0.875em;
+    color: #dc3545;
+}
+
+.was-validated .form-control:invalid ~ .invalid-feedback,
+.was-validated .form-control:invalid ~ .invalid-feedback,
+.form-control.is-invalid ~ .invalid-feedback {
+    display: block;
+}
